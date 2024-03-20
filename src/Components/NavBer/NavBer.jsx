@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './NavBer.css'
 const NavBer = () => {
   return (
@@ -6,7 +6,8 @@ const NavBer = () => {
       <h2>my website</h2>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/users">Users</Link>
+        
+        <NavLink to="/users">users</NavLink>
         <Link to="/posts">posts</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
